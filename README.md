@@ -7,7 +7,7 @@ Un sitio web interactivo con temática espacial/quantum que presenta el ecosiste
 - **Logo animado**: Animación de aparición del logo QUANTUM DAO con efectos de escala y fade-in
 - **Sistema planetario interactivo**: 6 planetas orbitantes que representan diferentes servicios
 - **Diseño responsive**: Optimizado para dispositivos móviles y desktop
-- **Tema dark space**: Fondo azul oscuro (#020C19) con efectos neón
+- **Tema dark space**: Fondo azul navy oscuro (#002348ff) con efectos neón
 - **Hover effects**: Tooltips y efectos visuales al interactuar con los planetas
 - **Navegación intuitiva**: Cada planeta enlaza a un servicio específico del ecosistema
 
@@ -53,7 +53,7 @@ quantum-dao/
     --accent: #00d9ff;         /* Cyan neón */
     --secondary: #5a67d8;      /* Azul lavanda */
     --highlight: #ffd32d;      /* Amarillo dorado */
-    --bg-color: #020C19;       /* Fondo azul oscuro */
+    --bg-color: #002348ff;     /* Fondo azul navy oscuro */
 }
 ```
 
