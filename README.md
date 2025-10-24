@@ -87,8 +87,8 @@ Extiende `css/animations.css` y `js/animations.js` para nuevas funcionalidades.
 
 ## 📱 Responsive Design
 
-- **Desktop**: Planetas en órbita completa (400px diámetro)
-- **Mobile**: Planetas en órbita reducida (300px diámetro)
+- **Desktop**: Logo atómico (128px), planetas en órbita completa (400px diámetro)
+- **Mobile**: Logo atómico (102px), planetas en órbita reducida (300px diámetro)
 - **Breakpoints**: Optimizado para pantallas menores a 768px
 
 ## 🔄 Historial de Cambios
@@ -99,6 +99,7 @@ Extiende `css/animations.css` y `js/animations.js` para nuevas funcionalidades.
 - **v1.3**: Cambio de color de fondo a azul navy oscuro (#002348ff)
 - **v1.4**: Implementación de logo atómico quantum con órbitas electrónicas y animaciones orbitales
 - **v1.5**: Cambio de color de fondo a azul navy oscuro (#05162B)
+- **v1.6**: Reducción del tamaño del logo atómico en 15% (128px desktop, 102px mobile)
 
 ## 📄 Licencia
 

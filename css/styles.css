@@ -54,8 +54,8 @@ body {
 }
 
 .atomic-logo {
-    width: 150px;
-    height: 150px;
+    width: 128px;
+    height: 128px;
     opacity: 0;
     animation: logoScaleIn 2s ease-in-out 0.5s forwards;
 }
@@ -294,8 +294,8 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .atomic-logo {
-        width: 120px;
-        height: 120px;
+        width: 102px;
+        height: 102px;
     }
 
     .logo-text {
