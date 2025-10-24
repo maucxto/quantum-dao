@@ -1,0 +1,67 @@
+/* Animaciones para el logo, similar a Latiz pero adaptado a tema quantum */
+/* Animación de entrada con escala y fade, más efecto de "entrelazamiento" con líneas */
+
+.logo-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Letter animation */
+.letter {
+    opacity: 0;
+    animation: letterAppear 0.8s ease-in-out forwards;
+}
+
+.letter:nth-child(1) { animation-delay: 2s; } /* Q */
+.letter:nth-child(2) { animation-delay: 2.15s; } /* U */
+.letter:nth-child(3) { animation-delay: 2.3s; } /* A */
+.letter:nth-child(4) { animation-delay: 2.45s; } /* N */
+.letter:nth-child(5) { animation-delay: 2.6s; } /* T */
+.letter:nth-child(6) { animation-delay: 2.75s; } /* U */
+.letter:nth-child(7) { animation-delay: 2.9s; } /* M */
+.letter:nth-child(8) { animation-delay: 3.05s; } /* D */
+.letter:nth-child(9) { animation-delay: 3.2s; } /* A */
+.letter:nth-child(10) { animation-delay: 3.35s; } /* O */
+
+.letter.space {
+    animation: none;
+    opacity: 1;
+    width: 0.5em;
+}
+
+@keyframes letterAppear {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(180deg);
+        color: #fff;
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1.1) rotate(0deg);
+        color: #00d9ff;
+        text-shadow: 0 0 5px #00d9ff, 0 0 10px #00d9ff;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+        color: #00d9ff;
+        text-shadow: 0 0 10px #00d9ff, 0 0 20px #00d9ff, 0 0 30px #00d9ff;
+    }
+}
+
+/* Animación para aparición de planetas */
+.planets-container {
+    animation: fadeInPlanets 1s ease-in-out 4s forwards; /* Aparece después de las letras */
+}
+
+@keyframes fadeInPlanets {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

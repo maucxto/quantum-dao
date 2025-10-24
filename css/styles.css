@@ -1,0 +1,235 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    background-color: #000; /* Black space background */
+    background-image: radial-gradient(2px 2px at 20px 30px, #eee, transparent), radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,1), transparent), radial-gradient(1px 1px at 90px 40px, #fff, transparent), radial-gradient(1px 1px at 130px 80px, rgba(255,255,255,0.8), transparent), radial-gradient(2px 2px at 160px 30px, rgba(255,255,255,1), transparent);
+    background-repeat: repeat;
+    background-size: 200px 100px;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Colores inspirados en Quantum Wallet y tema quantum, agregando variaciones neón */
+:root {
+    --primary: #0a1929; /* Azul profundo */
+    --accent: #00d9ff; /* Cyan de quantum wallet */
+    --secondary: #5a67d8; /* Azul lavanda */
+    --highlight: #ffd32d; /* Amarillo dorado de quantum */
+    --bg-gradient: linear-gradient(135deg, #0a1929, #1e3a8a, #581c87);
+    --planet-color-1: #ff6b7d; /* Rosa neón */
+    --planet-color-2: #00d9ff; /* Cyan neón */
+    --planet-color-3: #ffd32d; /* Amarillo dorado */
+    --planet-color-4: #6c5ce7; /* Púrpura vivo */
+    --planet-color-5: #fd79a8; /* Pink */
+    --planet-color-6: #a29bfe; /* Lavanda neón */
+    --additional: #f093fb; /* Magenta extra */
+}
+
+.main-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-gradient);
+}
+
+.logo-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.92rem; /* Increased by 28% from 1.5rem */
+    font-weight: 700;
+    color: #00d9ff;
+    text-align: center;
+    z-index: 10;
+    text-shadow: 0 0 10px #00d9ff, 0 0 20px #00d9ff, 0 0 30px #00d9ff;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 0.1em;
+    animation: latticeFadeIn 2s ease-in-out forwards;
+}
+
+@keyframes latticeFadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+}
+
+.letter {
+    margin: 0 0.05em;
+}
+
+.planets-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    opacity: 0;
+    transition: opacity 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planets-container.visible {
+    opacity: 1;
+}
+
+.planet {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.planet::before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    bottom: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.5rem;
+    white-space: nowrap;
+    z-index: 20;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.planet:hover::before {
+    opacity: 1;
+}
+
+.planet:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.planet-1 {
+    background: radial-gradient(circle at 30% 30%, #4a90e2 20%, #2e5c8a 50%, #1e3a5f 90%); /* Earth-like */
+    transform: rotate(0deg) translate(200px) rotate(0deg);
+}
+
+.planet-1::before {
+    content: "Quantum Wealth Academy";
+}
+
+.planet-2 {
+    background: radial-gradient(circle at 40% 30%, #ff6b35 20%, #cc4a2c 50%, #8b2c1a 90%); /* Mars-like */
+    transform: rotate(60deg) translate(200px) rotate(-60deg);
+}
+
+.planet-2::before {
+    content: "Quantum Wallet";
+}
+
+.planet-3 {
+    background: radial-gradient(circle at 30% 30%, #ffd700 20%, #ffb347 50%, #ff8c00 80%); /* Venus-like */
+    transform: rotate(120deg) translate(200px) rotate(-120deg);
+}
+
+.planet-3::before {
+    content: "QuantumLabs";
+}
+
+.planet-4 {
+    background: radial-gradient(circle at 30% 30%, #d2691e 20%, #a0522d 50%, #8b4513 90%); /* Jupiter-like */
+    transform: rotate(180deg) translate(200px) rotate(-180deg);
+}
+
+.planet-4::before {
+    content: "Quantum ReFi";
+}
+
+.planet-5 {
+    background: radial-gradient(circle at 30% 30%, #ff4500 20%, #cc3300 50%, #8b0000 90%); /* Mars-like variant */
+    transform: rotate(240deg) translate(200px) rotate(-240deg);
+}
+
+.planet-5::before {
+    content: "Quantum Hub";
+}
+
+.planet-6 {
+    background: radial-gradient(circle at 30% 30%, #c0c0c0 20%, #a0a0a0 50%, #808080 90%); /* Mercury-like */
+    transform: rotate(300deg) translate(200px) rotate(-300deg);
+}
+
+.planet-6::before {
+    content: "Quantum Space";
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo-container {
+        font-size: 1.28rem; /* Increased by 28% from 1rem */
+        text-shadow: 0 0 5px #00d9ff, 0 0 10px #00d9ff;
+    }
+
+    .planets-container {
+        width: 300px;
+        height: 300px;
+    }
+
+    .planet {
+        width: 64px;
+        height: 64px;
+        font-size: 0.5rem;
+    }
+
+    .planet-1, .planet-2, .planet-3, .planet-4, .planet-5, .planet-6 {
+        transform-origin: center;
+    }
+
+    /* Ajustar translate para móviles */
+    .planet-1 { transform: rotate(0deg) translate(150px) rotate(0deg); }
+    .planet-2 { transform: rotate(60deg) translate(150px) rotate(-60deg); }
+    .planet-3 { transform: rotate(120deg) translate(150px) rotate(-120deg); }
+    .planet-4 { transform: rotate(180deg) translate(150px) rotate(-180deg); }
+    .planet-5 { transform: rotate(240deg) translate(150px) rotate(-240deg); }
+    .planet-6 { transform: rotate(300deg) translate(150px) rotate(-300deg); }
+}
