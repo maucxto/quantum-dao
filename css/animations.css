@@ -79,17 +79,14 @@
     0% {
         opacity: 0;
         transform: translateY(30px) scale(0.8);
-        text-shadow: 0 0 0px #D4AF37;
     }
     50% {
         opacity: 0.7;
         transform: translateY(15px) scale(1.05);
-        text-shadow: 0 0 20px #D4AF37, 0 0 40px #D4AF37;
     }
     100% {
         opacity: 1;
         transform: translateY(0) scale(1);
-        text-shadow: 0 0 10px #D4AF37, 0 0 20px #D4AF37, 0 0 30px #D4AF37;
     }
 }
 
