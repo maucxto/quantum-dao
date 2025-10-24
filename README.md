@@ -95,6 +95,7 @@ Extiende `css/animations.css` y `js/animations.js` para nuevas funcionalidades.
 - **v1.0**: Lanzamiento inicial con logo animado y sistema planetario
 - **v1.1**: Actualización de enlaces y cambio de color de fondo a azul oscuro
 - **v1.2**: Optimización responsive y mejoras en efectos hover
+- **v1.3**: Cambio de color de fondo a azul navy oscuro (#002348ff)
 
 ## 📄 Licencia
 
