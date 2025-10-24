@@ -8,10 +8,7 @@
 body {
     font-family: 'Inter', sans-serif;
     color: #fff;
-    background: radial-gradient(ellipse at center, #0f0f23 0%, #1a1a2e 25%, #16213e 50%, #0f0f23 100%);
-    background-image: radial-gradient(3px 3px at 50px 50px, #fff, transparent), radial-gradient(2px 2px at 100px 100px, rgba(255,255,255,0.8), transparent), radial-gradient(1px 1px at 150px 50px, #fff, transparent), radial-gradient(2px 2px at 200px 150px, rgba(255,255,255,0.9), transparent), radial-gradient(1px 1px at 250px 100px, rgba(255,255,255,0.7), transparent), radial-gradient(3px 3px at 300px 50px, #fff, transparent), radial-gradient(2px 2px at 350px 150px, rgba(255,255,255,1), transparent), radial-gradient(1px 1px at 400px 100px, rgba(255,255,255,0.8), transparent), radial-gradient(3px 3px at 450px 50px, #fff, transparent), radial-gradient(2px 2px at 500px 150px, rgba(255,255,255,0.9), transparent), radial-gradient(1px 1px at 550px 100px, rgba(255,255,255,0.6), transparent), radial-gradient(3px 3px at 600px 50px, #fff, transparent), radial-gradient(2px 2px at 650px 150px, rgba(255,255,255,1), transparent), radial-gradient(1px 1px at 700px 100px, rgba(255,255,255,0.8), transparent), radial-gradient(3px 3px at 750px 50px, #fff, transparent), radial-gradient(2px 2px at 800px 150px, rgba(255,255,255,0.9), transparent);
-    background-repeat: repeat;
-    background-size: 800px 200px;
+    background-color: #000; /* Black background */
     line-height: 1.6;
     display: flex;
     justify-content: center;
@@ -54,10 +51,10 @@ body {
     justify-content: center;
     font-size: 1.92rem; /* Increased by 28% from 1.5rem */
     font-weight: 700;
-    color: #00d9ff;
+    color: #fff;
     text-align: center;
     z-index: 10;
-    text-shadow: 0 0 10px #00d9ff, 0 0 20px #00d9ff, 0 0 30px #00d9ff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
     font-family: 'Courier New', monospace;
     letter-spacing: 0.1em;
     animation: latticeFadeIn 2s ease-in-out forwards;
@@ -202,11 +199,13 @@ body {
     content: "Quantum Space";
 }
 
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .logo-container {
         font-size: 1.28rem; /* Increased by 28% from 1rem */
-        text-shadow: 0 0 5px #00d9ff, 0 0 10px #00d9ff;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff;
     }
 
     .planets-container {

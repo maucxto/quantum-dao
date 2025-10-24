@@ -35,26 +35,21 @@
 @keyframes letterAppear {
     0% {
         opacity: 0;
-        transform: scale(0.5) rotate(180deg);
-        color: #fff;
+        transform: scale(0.5);
     }
     50% {
         opacity: 0.7;
-        transform: scale(1.1) rotate(0deg);
-        color: #00d9ff;
-        text-shadow: 0 0 5px #00d9ff, 0 0 10px #00d9ff;
+        transform: scale(1.1);
     }
     100% {
         opacity: 1;
-        transform: scale(1) rotate(0deg);
-        color: #00d9ff;
-        text-shadow: 0 0 10px #00d9ff, 0 0 20px #00d9ff, 0 0 30px #00d9ff;
+        transform: scale(1);
     }
 }
 
 /* Animación para aparición de planetas */
 .planets-container {
-    animation: fadeInPlanets 1s ease-in-out 4s forwards; /* Aparece después de las letras */
+    animation: fadeInPlanets 1s ease-in-out 3.5s forwards; /* Aparece después de las letras */
 }
 
 @keyframes fadeInPlanets {
