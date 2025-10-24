@@ -16,7 +16,7 @@ Un sitio web interactivo con temática espacial/quantum que presenta el ecosiste
 
 | Planeta | Servicio | Enlace |
 |---------|----------|---------|
-| 🪐 **Planeta 1** | Quantum Wealth Academy | [https://quantum-wealth-aura.lovable.app/](https://quantum-wealth-aura.lovable.app/) |
+| 🪐 **Planeta 1** | Quantum Wealth Academy | [https://qw-academy.abacusai.app/](https://qw-academy.abacusai.app/) |
 | 🪐 **Planeta 2** | Quantum Wallet | [https://maucxto.github.io/quantum-wallet/](https://maucxto.github.io/quantum-wallet/) |
 | 🪐 **Planeta 3** | QuantumLabs | #labs |
 | 🪐 **Planeta 4** | Quantum ReFi | #refi |
