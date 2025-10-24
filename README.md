@@ -4,7 +4,8 @@ Un sitio web interactivo con temática espacial/quantum que presenta el ecosiste
 
 ## ✨ Características
 
-- **Logo animado**: Animación de aparición del logo QUANTUM DAO con efectos de escala y fade-in
+- **Logo atómico quantum**: Logo SVG animado con órbitas electrónicas y esfera central azul
+- **Animaciones orbitales**: Electrones orbitando alrededor del núcleo con diferentes velocidades
 - **Sistema planetario interactivo**: 6 planetas orbitantes que representan diferentes servicios
 - **Diseño responsive**: Optimizado para dispositivos móviles y desktop
 - **Tema dark space**: Fondo azul navy oscuro (#002348ff) con efectos neón
@@ -96,6 +97,7 @@ Extiende `css/animations.css` y `js/animations.js` para nuevas funcionalidades.
 - **v1.1**: Actualización de enlaces y cambio de color de fondo a azul oscuro
 - **v1.2**: Optimización responsive y mejoras en efectos hover
 - **v1.3**: Cambio de color de fondo a azul navy oscuro (#002348ff)
+- **v1.4**: Implementación de logo atómico quantum con órbitas electrónicas y animaciones orbitales
 
 ## 📄 Licencia
 

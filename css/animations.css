@@ -1,45 +1,135 @@
-/* Animaciones para el logo, similar a Latiz pero adaptado a tema quantum */
-/* Animación de entrada con escala y fade, más efecto de "entrelazamiento" con líneas */
+/* Animaciones para el logo atómico quantum */
+/* Animación de entrada del logo SVG y elementos orbitales */
 
-.logo-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+.atomic-logo {
+    animation: atomicLogoEntrance 3s ease-in-out forwards;
 }
 
-/* Letter animation */
-.letter {
+.logo-text {
+    animation: quantumTextGlow 2s ease-in-out 3s forwards;
+}
+
+.central-sphere {
+    animation: spherePulse 2s ease-in-out infinite 1s;
+}
+
+.central-core {
+    animation: coreGlow 1.5s ease-in-out infinite 1.5s;
+}
+
+.orbital-path {
     opacity: 0;
-    animation: letterAppear 0.8s ease-in-out forwards;
+    animation: orbitalFadeIn 1s ease-in-out forwards;
 }
 
-.letter:nth-child(1) { animation-delay: 2s; } /* Q */
-.letter:nth-child(2) { animation-delay: 2.15s; } /* U */
-.letter:nth-child(3) { animation-delay: 2.3s; } /* A */
-.letter:nth-child(4) { animation-delay: 2.45s; } /* N */
-.letter:nth-child(5) { animation-delay: 2.6s; } /* T */
-.letter:nth-child(6) { animation-delay: 2.75s; } /* U */
-.letter:nth-child(7) { animation-delay: 2.9s; } /* M */
-.letter:nth-child(8) { animation-delay: 3.05s; } /* D */
-.letter:nth-child(9) { animation-delay: 3.2s; } /* A */
-.letter:nth-child(10) { animation-delay: 3.35s; } /* O */
-
-.letter.space {
-    animation: none;
-    opacity: 1;
-    width: 0.5em;
+.orbital-1 {
+    animation-delay: 1s;
 }
 
-@keyframes letterAppear {
+.orbital-2 {
+    animation-delay: 1.2s;
+}
+
+.orbital-3 {
+    animation-delay: 1.4s;
+}
+
+.electron {
+    opacity: 0;
+    animation: electronFadeIn 0.5s ease-in-out forwards;
+}
+
+.electron-1 {
+    animation-delay: 1.5s;
+}
+
+.electron-2 {
+    animation-delay: 1.7s;
+}
+
+.electron-3 {
+    animation-delay: 1.9s;
+}
+
+.electron-4 {
+    animation-delay: 2.1s;
+}
+
+/* Animación para aparición de planetas */
+.planets-container {
+    animation: fadeInPlanets 1s ease-in-out 4s forwards; /* Aparece después del logo completo */
+}
+
+@keyframes atomicLogoEntrance {
     0% {
         opacity: 0;
-        transform: scale(0.5);
+        transform: scale(0.2) rotate(-180deg);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1.1) rotate(-90deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+@keyframes quantumTextGlow {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.8);
+        text-shadow: 0 0 0px #D4AF37;
     }
     50% {
         opacity: 0.7;
+        transform: translateY(15px) scale(1.05);
+        text-shadow: 0 0 20px #D4AF37, 0 0 40px #D4AF37;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        text-shadow: 0 0 10px #D4AF37, 0 0 20px #D4AF37, 0 0 30px #D4AF37;
+    }
+}
+
+@keyframes spherePulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
         transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+@keyframes coreGlow {
+    0%, 100% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+@keyframes orbitalFadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+}
+
+@keyframes electronFadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0);
     }
     100% {
         opacity: 1;
@@ -47,16 +137,13 @@
     }
 }
 
-/* Animación para aparición de planetas */
-.planets-container {
-    animation: fadeInPlanets 1s ease-in-out 3.5s forwards; /* Aparece después de las letras */
-}
-
 @keyframes fadeInPlanets {
     from {
         opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
     }
     to {
         opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
     }
 }

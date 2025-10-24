@@ -13,12 +13,23 @@
 <body>
     <div class="main-container">
         <div id="logo-container" class="logo-container">
-            <div class="line">
-                <span class="letter">Q</span><span class="letter">U</span><span class="letter">A</span><span class="letter">N</span><span class="letter">T</span><span class="letter">U</span><span class="letter">M</span>
-            </div>
-            <div class="line">
-                <span class="letter">D</span><span class="letter">A</span><span class="letter">O</span>
-            </div>
+            <svg class="atomic-logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <!-- Orbital paths -->
+                <ellipse cx="100" cy="100" rx="80" ry="30" fill="none" stroke="#D4AF37" stroke-width="2" opacity="0.8" class="orbital-path orbital-1"/>
+                <ellipse cx="100" cy="100" rx="60" ry="50" fill="none" stroke="#D4AF37" stroke-width="2" opacity="0.6" class="orbital-path orbital-2"/>
+                <ellipse cx="100" cy="100" rx="40" ry="70" fill="none" stroke="#D4AF37" stroke-width="2" opacity="0.4" class="orbital-path orbital-3"/>
+
+                <!-- Central sphere -->
+                <circle cx="100" cy="100" r="15" fill="#1e3a8a" class="central-sphere"/>
+                <circle cx="100" cy="100" r="8" fill="#3b82f6" opacity="0.8" class="central-core"/>
+
+                <!-- Orbital electrons -->
+                <circle cx="100" cy="70" r="3" fill="#D4AF37" class="electron electron-1"/>
+                <circle cx="130" cy="100" r="3" fill="#D4AF37" class="electron electron-2"/>
+                <circle cx="100" cy="130" r="3" fill="#D4AF37" class="electron electron-3"/>
+                <circle cx="70" cy="100" r="3" fill="#D4AF37" class="electron electron-4"/>
+            </svg>
+            <div class="logo-text">QUANTUM</div>
         </div>
         <div id="planets-container" class="planets-container">
             <a href="https://quantum-wealth-aura.lovable.app/" class="planet planet-1"></a>
