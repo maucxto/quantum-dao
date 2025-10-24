@@ -8,7 +8,7 @@ Un sitio web interactivo con temática espacial/quantum que presenta el ecosiste
 - **Animaciones orbitales**: Electrones orbitando alrededor del núcleo con diferentes velocidades
 - **Sistema planetario interactivo**: 6 planetas orbitantes que representan diferentes servicios
 - **Diseño responsive**: Optimizado para dispositivos móviles y desktop
-- **Tema dark space**: Fondo azul navy oscuro (#002348ff) con efectos neón
+- **Tema dark space**: Fondo azul navy oscuro (#05162B) con efectos neón
 - **Hover effects**: Tooltips y efectos visuales al interactuar con los planetas
 - **Navegación intuitiva**: Cada planeta enlaza a un servicio específico del ecosistema
 
@@ -54,7 +54,7 @@ quantum-dao/
     --accent: #00d9ff;         /* Cyan neón */
     --secondary: #5a67d8;      /* Azul lavanda */
     --highlight: #ffd32d;      /* Amarillo dorado */
-    --bg-color: #002348ff;     /* Fondo azul navy oscuro */
+    --bg-color: #05162B;       /* Fondo azul navy oscuro */
 }
 ```
 
@@ -98,6 +98,7 @@ Extiende `css/animations.css` y `js/animations.js` para nuevas funcionalidades.
 - **v1.2**: Optimización responsive y mejoras en efectos hover
 - **v1.3**: Cambio de color de fondo a azul navy oscuro (#002348ff)
 - **v1.4**: Implementación de logo atómico quantum con órbitas electrónicas y animaciones orbitales
+- **v1.5**: Cambio de color de fondo a azul navy oscuro (#05162B)
 
 ## 📄 Licencia
 
